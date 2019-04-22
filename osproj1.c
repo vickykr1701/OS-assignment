@@ -44,14 +44,7 @@ void input_fun(void)
 				scanf("%d", &r[rc].id);
 				printf("Arrival Time: "); 
 				scanf("%d", &t);
-				if(t<1000 || t>1200){
-					printf("\nenter correct time");
-					input_fun();
-				}
-				else
-				{
 				r[rc].at= t-1000;
-				}
 				printf("burst Time: "); 
 				scanf("%d", &r[rc].bt);	 
 				r[rc].rbt= r[rc].bt; 
@@ -62,15 +55,7 @@ void input_fun(void)
 				scanf("%d", &s[sc].id);
 				printf("Arrival Time: "); 
 				scanf("%d", &t); 
-				if(t<1000 || t>1200)
-				{
-					printf("\nEnter Correct time\n");
-					input();
-				}
-				else 
-				{
 				s[sc].at= t-1000; 
-				}
 				printf("burst Time: "); 
 				scanf("%d", &s[sc].bt);	 
 				s[sc].rbt= s[sc].bt;
